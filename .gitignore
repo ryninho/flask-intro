@@ -8,3 +8,4 @@ include
 .DS_Store
 
 venv/pip-selfcheck.json
+*.db
