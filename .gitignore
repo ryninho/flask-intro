@@ -9,3 +9,4 @@ include
 
 venv/pip-selfcheck.json
 *.db
+*.pyc
