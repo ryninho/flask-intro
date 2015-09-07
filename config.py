@@ -5,7 +5,7 @@ import os
 class BaseConfig(object):
   DEBUG = False
   SECRET_KEY = os.environ['FLASK_INTRO_SECRET_KEY']
-  SQLALCHEMY_DATABASE_URI = os.environ['FLASK_INTRO_DB']
+  SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 
 class DevelopmentConfig(BaseConfig):
   DEBUG = True
