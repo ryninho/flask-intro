@@ -6,8 +6,8 @@ from functools import wraps
 
 app = Flask(__name__)
 
-app.secret_key = "quickstart-key"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+import os
+app.config.from_object(os.environ['APP_SETTINGS'])
 
 # create the sqlalchemy object
 db = SQLAlchemy(app)
