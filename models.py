@@ -29,7 +29,7 @@ class User(db.Model):
     email = db.Column(db.String, nullable=False)
     password = db.Column(db.String, nullable=False)
     posts = relationship("BlogPost", backref="author")
-    favorite_color = db.Column(db.String) # to test out downgrading
+    # favorite_colors = db.Column(db.String) # to test out downgrading
 
     def __init__(self, name, email, password):
         self.name = name
